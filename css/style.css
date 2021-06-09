@@ -1,8 +1,13 @@
+.resizeimage img {
+  width: 100%;
+  height: 100%;
+}
+
 .loader {
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background: #fff;
   bottom: 0;
   display: -webkit-box;
@@ -11,8 +16,8 @@
   display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   left: 0;
   position: fixed;
   right: 0;
@@ -22,7 +27,7 @@
 
 .loader::after {
   -webkit-animation: loader 0.5s linear infinite;
-          animation: loader 0.5s linear infinite;
+  animation: loader 0.5s linear infinite;
   border: 1px solid orange;
   border-radius: 50%;
   border-right: 1px solid rgba(255, 165, 0, 0.2);
@@ -35,27 +40,28 @@
 @-webkit-keyframes loader {
   0% {
     -webkit-transform: rotate(0);
-            transform: rotate(0);
+    transform: rotate(0);
   }
   100% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 @keyframes loader {
   0% {
     -webkit-transform: rotate(0);
-            transform: rotate(0);
+    transform: rotate(0);
   }
   100% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 body {
-  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", Meiryo,
+    sans-serif;
 }
 
 main {

@@ -10,22 +10,10 @@
 
 
   <body>
-
-    <!-- <textarea rows=10 cols=30 id=output style="margin: 0px; width: 1000px; height: 500px;" disabled></textarea><br> -->
+    <img id="js-loader" src="./img/loading_image.gif">
     <p>ランダムウォーク</p>
-    <!-- jsでsrcがやってくるまで処理中の画像を表示したい -->
-    <div id="js-loader" class="loader"></div>
     <img id="output">
-    <script>
-      $(window).on('load',function(){
-        // ここに関数
-        function loaderClose(){
-          $("#js-loader").fadeOut();
-        }
-        setTimeout(loaderClose, 10000);
-      });
-    </script>
-
+    <script type="module" src="loading.js"></script>
     <script type="module" src="main.js"></script>
 
   </body>
