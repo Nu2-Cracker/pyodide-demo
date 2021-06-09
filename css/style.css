@@ -1,0 +1,77 @@
+.loader {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+  bottom: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+}
+
+.loader::after {
+  -webkit-animation: loader 0.5s linear infinite;
+          animation: loader 0.5s linear infinite;
+  border: 1px solid orange;
+  border-radius: 50%;
+  border-right: 1px solid rgba(255, 165, 0, 0.2);
+  border-top: 1px solid rgba(255, 165, 0, 0.2);
+  content: "";
+  height: 70px;
+  width: 70px;
+}
+
+@-webkit-keyframes loader {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes loader {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+main {
+  line-height: 1.6;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+main h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+main p {
+  font-size: 16px;
+  margin-top: 30px;
+}
+/*# sourceMappingURL=style.css.map */

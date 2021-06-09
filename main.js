@@ -15,8 +15,15 @@ async function main(){
 
 
 
+async function display(){
+  main();
+  console.log(document.querySelector('img#output'));
+  console.log(document.querySelector('img#output').hasAttribute("src"))
 
-main();
+}
+
+display();
+
 // document.addEventListener('DOMContentLoaded', (event) => {
 //   await result;
 //   let output_pane = document.getElementById("output");

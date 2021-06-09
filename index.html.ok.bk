@@ -3,9 +3,7 @@
 <html>
   <header>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="./css/style.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.17.0/full/pyodide.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
   </header>
 
 
@@ -14,18 +12,7 @@
     <!-- <textarea rows=10 cols=30 id=output style="margin: 0px; width: 1000px; height: 500px;" disabled></textarea><br> -->
     <p>ランダムウォーク</p>
     <!-- jsでsrcがやってくるまで処理中の画像を表示したい -->
-    <div id="js-loader" class="loader"></div>
     <img id="output">
-    <script>
-      $(window).on('load',function(){
-        // ここに関数
-        function loaderClose(){
-          $("#js-loader").fadeOut();
-        }
-        setTimeout(loaderClose, 10000);
-      });
-    </script>
-
     <script type="module" src="main.js"></script>
 
   </body>

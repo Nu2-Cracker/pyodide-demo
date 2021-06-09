@@ -2,6 +2,20 @@ let warker = `import random
 import io, base64
 import matplotlib.pyplot as plt
 import numpy as np
+import sys, os, subprocess
+
+
+print(sys.path)
+print(os.listdir("/lib/python3.8/site-packages"))
+#print(subprocess.run(["cat", "/lib/python3.8/site-packages/README.txt"]))
+with open("/lib/python3.8/site-packages/README.txt",mode="r", encoding="utf-8") as fr:
+    text = fr.read()
+    print(text)
+
+import micropip
+await micropip.install('pyrtl')
+#await micropip.install('jupyterlab')
+print(os.listdir("/lib/python3.8/site-packages"))
 
 def walker():
     nsteps = 1000
