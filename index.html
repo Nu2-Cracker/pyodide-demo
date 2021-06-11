@@ -4,18 +4,20 @@
   <header>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./css/style.css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.17.0/full/pyodide.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.17.0/full/pyodide.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </header>
 
 
   <body>
-    <div id="js-loader" class=loader></div>>
+    <div id="js-loader" class=loader></div>
     <p>ランダムウォーク</p>
-    <img id="output">
+    <div class="chart-container" style="position: relative; height:30vh; width:50vw">
+      <canvas id="random-walk-chart"></canvas>
+    </div>
     <script type="module" src="loading.js"></script>
-    <script type="module" src="main.js"></script>
-
+    <script type="module" src="display.js"></script>
   </body>
 </html>
 

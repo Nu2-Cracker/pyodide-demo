@@ -1,4 +1,4 @@
-const img = document.getElementById("output");
+const canvas = document.getElementById("random-walk-chart");
 
 
 $(window).on('load',function(){
@@ -8,8 +8,8 @@ $(window).on('load',function(){
   const observer = new MutationObserver(records => {
     loaderClose();
   });
-  observer.observe(img, {
+  observer.observe(canvas, {
     attributes: true,
-    attributeFilter: ['src']
+    attributeFilter: ['width']
   });
 });
