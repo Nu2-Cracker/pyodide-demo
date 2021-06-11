@@ -11,7 +11,7 @@ async function warkman(){
 async function display(){
   let result = await warkman();
   let data = {
-    labels: Array.from(Array(100), (v, k)=>k),
+    labels: Array.from(Array(10000), (v, k)=>k),
     datasets: [{
       label: 'random walk',
       backgroundColor: 'rgb(255, 99, 132)',
